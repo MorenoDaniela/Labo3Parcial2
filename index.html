@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title> Parcial 2 Moreno Daniela</title>
+        <link rel="stylesheet" href="css/estilos.css"/> 
+        <script src="Vehiculo.js"></script>
+        <script src="Auto.js"></script>
+        <script src="Camioneta.js"></script>
+        <script src="funcionesHtml.js"></script>
+    </head>
+    <body>
+        <div id = "alta">
+            <input type="button" value = "Alta" id = "alta" name="alta">
+            <br>
+        </div>
+    <div class = "container-fluid" id= "contenedorfiltros" >
+            Filtro de Vehiculos:
+            <select name="select" id ="tipoFiltro" enable>
+                <option value="Camioneta">Camioneta</option> 
+                <option value="Auto">Auto</option>
+              </select>
+            Promedio de precios
+            <input type="text" id = "precioFiltro" name="precio">
+            <input type="button" value = "filtro" id = "filtro" name="filtro">
+        
+    </div>
+        <div class = "container-fluid" id= "contenedorAgregar" hidden="true">
+            <div id = "divCerrar">
+                <input type="button" value = "x" id = "cerrar" name="cerrar">
+                <br>
+            </div>
+            <div id = "divMascota">
+                Alta Vehiculo:
+                <div id = "divId">
+                    Id:
+                    <input type="text" id = "id" name="id" disabled>
+                    <br>
+                </div>
+                <div id = "divMarca">
+                    Marca:
+                    <input type="text" id = "marca" name="marca">
+                    <br>
+                </div>
+                <div id = "divModelo">
+                    Modelo:
+                    <input type="text" id = "modelo" name="modelo">
+                    <br>
+                </div>
+                <div id = "divPrecio">
+                    Precio:
+                    <input type="text" id = "precio" name="precio">
+                    <br>
+                </div>
+                <select name="select" id ="tipo" enable>
+                    <option value="Camioneta">Camioneta</option> 
+                    <option value="Auto">Auto</option>
+                  </select>
+                <br>
+                <div id = "divPuertas">
+                    Cantidad puertas:
+                    <input type="text" id = "puertas" name="puertas" >
+                    <br>
+                </div>
+                <div id = "divCuatro">
+                    Cuatro x cuatro (si o no):
+                    <input type="text" id = "cuatro" name="cuatro">
+                    <br>
+                </div>
+            </div>
+            
+            <div id = "divbotones">
+                <input type="button" value = "Agregar" id = "btnGuardar" name="btnGuardar">
+                <input type="button" value = "Cerrar" id = "btnCerrarAbajo" name="btnCerrarAbajo">
+                <br>
+            </div>
+        </div>
+        
+        <div id="checkear">
+            Campos mostrados (Tildar los campos a mostrar)
+            <input type="checkbox" id="idCheck" name="idCheck">
+            ID
+            <input type="checkbox" id="marcaCheck" name="marcaCheck">
+            Marca
+            <input type="checkbox" id="modeloCheck" name="modeloCheck">
+            Modelo
+            <input type="checkbox" id="precioCheck" name="precioCheck">
+            Precio
+            <br>
+        </div>
+        <div class = "container-fluid" id= "contBtn" >
+            <h1 id = "h1">Lista de Vehiculos</h1>
+        </div>
+        <table id="tabla">
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th> Accion</th>
+                
+            </tr>
+        </table>
+    </body>
+</html>
