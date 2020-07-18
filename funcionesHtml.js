@@ -2,15 +2,13 @@
 var Vehiculos;
 (function (Vehiculos) {
     var listaVehiculos = new Array();
-    var mascotaSeleccionada = false;
+    //var mascotaSeleccionada : boolean = false;
     var globalTr;
     var contenedorAgregar;
-    var prom = 0;
     window.onload = function () {
         var _a, _b, _c, _d, _e;
         (_a = document.getElementById("alta")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", AbrirRecuadro);
         (_b = document.getElementById("btnGuardar")) === null || _b === void 0 ? void 0 : _b.addEventListener("click", Vehiculos.Guardar);
-        //document.getElementById("btnModificar")?.addEventListener("click",Animales.Modificar);
         (_c = document.getElementById("btnCerrarAbajo")) === null || _c === void 0 ? void 0 : _c.addEventListener("click", CerrarRecuadro);
         (_d = document.getElementById("cerrar")) === null || _d === void 0 ? void 0 : _d.addEventListener("click", CerrarRecuadro);
         (_e = document.getElementById("filtro")) === null || _e === void 0 ? void 0 : _e.addEventListener("click", Vehiculos.Filtrar);
@@ -112,8 +110,8 @@ var Vehiculos;
     function fillData(tr) {
         var trForFilling = tr.target.parentNode;
         globalTr = trForFilling;
-        mascotaSeleccionada = true,
-            document.getElementById("nombre").value = trForFilling.childNodes[0].innerHTML;
+        // mascotaSeleccionada=true, 
+        document.getElementById("nombre").value = trForFilling.childNodes[0].innerHTML;
         document.getElementById("atributo").value = trForFilling.childNodes[1].innerHTML;
         document.getElementById("tipo").value = trForFilling.childNodes[2].innerHTML;
     }
@@ -149,8 +147,9 @@ var Vehiculos;
         document.getElementById("precioFiltro").value = promedio.toString();
     }
     Vehiculos.Filtrar = Filtrar;
-    function MostrarColumnas() {
-        var id = document.getElementById("idCheck").checked;
-    }
-    Vehiculos.MostrarColumnas = MostrarColumnas;
+    /*
+    export function MostrarColumnas()
+    {
+        var id = document.getElementById("idCheck")?.checked;
+    }*/
 })(Vehiculos || (Vehiculos = {}));

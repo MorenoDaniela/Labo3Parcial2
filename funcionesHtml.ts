@@ -1,16 +1,15 @@
 namespace Vehiculos
 {
     var listaVehiculos: Array<Vehiculo> = new Array <Vehiculo>();
-    var mascotaSeleccionada : boolean = false;
+    //var mascotaSeleccionada : boolean = false;
     var globalTr : any;
     var contenedorAgregar:any;
-    var prom :number=0;
+
 
     window.onload = function ()
     {
         document.getElementById("alta")?.addEventListener("click",AbrirRecuadro);
         document.getElementById("btnGuardar")?.addEventListener("click",Vehiculos.Guardar);
-        //document.getElementById("btnModificar")?.addEventListener("click",Animales.Modificar);
         document.getElementById("btnCerrarAbajo")?.addEventListener("click",CerrarRecuadro);
         document.getElementById("cerrar")?.addEventListener("click",CerrarRecuadro);
         document.getElementById("filtro")?.addEventListener("click",Vehiculos.Filtrar);
@@ -139,7 +138,7 @@ namespace Vehiculos
     {
         var trForFilling = tr.target.parentNode;
         globalTr=trForFilling;
-        mascotaSeleccionada=true, 
+       // mascotaSeleccionada=true, 
         (<HTMLInputElement>document.getElementById("nombre")).value=trForFilling.childNodes[0].innerHTML;
         (<HTMLInputElement>document.getElementById("atributo")).value=trForFilling.childNodes[1].innerHTML;
         (<HTMLInputElement>document.getElementById("tipo")).value=trForFilling.childNodes[2].innerHTML;
@@ -182,8 +181,9 @@ namespace Vehiculos
         (<HTMLInputElement>document.getElementById("precioFiltro")).value =promedio.toString();
     }
 
+    /*
     export function MostrarColumnas()
     {
-        var id = document.getElementById("idCheck").checked;
-    }
+        var id = document.getElementById("idCheck")?.checked;
+    }*/
 }

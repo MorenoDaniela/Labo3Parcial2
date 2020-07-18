@@ -1,6 +1,6 @@
 #alta
 {
-    background-color: rgb(55, 0, 255);
+    background-color: rgb(73, 151, 161);
     border: 1px solid black;
     color: white;
     text-align: center;
@@ -33,7 +33,7 @@
 tr:nth-child(even)
 {
     background-color: black;
-    color: gold;
+    color: rgb(0, 255, 234);
 }
 #th, td
 {
@@ -117,9 +117,23 @@ tr:nth-child(even)
     flex-direction: row;
 }
 
-#btnEliminar
+#btnCerrarAbajo
 {
     background-color: red;
+    border: 1px solid black;
+    color: white;
+    width: 45%;
+    text-align: center;
+    font-size: 16px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    /*width: 10%;
+    border-radius:5px;*/
+}
+
+#btnGuardar
+{
+    background-color: rgb(0, 255, 21);
     border: 1px solid black;
     color: white;
     width: 45%;
@@ -139,23 +153,15 @@ tr:nth-child(even)
     right: 25%;
     font-family: 'Courier New', Courier, monospace;/*fuente*/
     text-align: center;
-    background-color: darkgoldenrod;
+    background-color: rgb(22, 170, 170);
 }
 
 #login
 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: darkgoldenrod;
+    background-color: rgb(57, 165, 192);
     color: black;
     width: 25%;
 }
 
-.Error
-{
-    border-color: red;
-}
-.NoError
-{
-    border-color: white;
-}
 
